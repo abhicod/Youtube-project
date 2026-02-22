@@ -1,26 +1,13 @@
-import React from 'react'
+import Header from "./components/Header";
+import Body from "./components/Body";
 
 const App = () => {
   return (
     <div>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-      <h1 className=''>App</h1>
-
+      <Header />
+      <Body />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
