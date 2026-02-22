@@ -12,7 +12,12 @@ const App = () => {
       <h1 className=''>App</h1>
       <h1 className=''>App</h1>
       <h1 className=''>App</h1>
-      <h1 className=''>App</h1>git status
+      <h1 className=''>App</h1>
+      <h1 className=''>App</h1>
+      <h1 className=''>App</h1>
+      <h1 className=''>App</h1>
+      <h1 className=''>App</h1>
+      <h1 className=''>App</h1>
 
     </div>
   )
