@@ -51,12 +51,12 @@ const ButtonsList = () => {
     })
   }
     return (
-    <div ref={scrollRef} className="carousel flex whitespace-nowrap items-center gap-1 pl-5 overflow-x-auto ">
-      <ChevronLeft size={37} className="absolute left-59 bg-gray-700 text-white rounded-full p-2 hover:bg-gray-500 cursor-pointer transition-all duration-300 ease-in-out" onClick={scrollLeft} />
+    <div ref={scrollRef} className="carousel flex whitespace-nowrap items-center gap-1 pl-5 overflow-x-auto w-23/24">
+      <ChevronLeft size={37} className="absolute left-2 bg-gray-700 text-white rounded-full p-2 hover:bg-gray-500 cursor-pointer transition-all duration-300 ease-in-out z-10 " onClick={scrollLeft} />
       {categories.map((category,index) => {
-        return <HeaderButtons name={category} isFirst={index === 0} isLast={index === categories.length - 1}/>;
+        return <HeaderButtons key={index} name={category} isFirst={index === 0} isLast={index === categories.length - 1}/>;
       })}
-      <ChevronRight size={37} className="absolute right-0 bg-gray-700 text-white rounded-full p-2 hover:bg-gray-500 cursor-pointer transition-all duration-300 ease-in-out" onClick={scrollRight} />
+      <ChevronRight size={37} className="absolute right-1 bg-gray-700 text-white rounded-full p-2 hover:bg-gray-500 cursor-pointer transition-all duration-300 ease-in-out" onClick={scrollRight} />
     </div>
   );
 };

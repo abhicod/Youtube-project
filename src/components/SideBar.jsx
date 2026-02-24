@@ -10,7 +10,7 @@ const SideBar = () => {
  if(!isMenuOpen) return null;
 
   return  (
-    <div className="h-screen w-2/12 border-r border-gray-200">
+    <div className="h-screen border-r border-gray-200">
       <SideBarListItems />
       <SideBarCategories />
     </div>
