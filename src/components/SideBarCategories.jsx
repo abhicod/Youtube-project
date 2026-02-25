@@ -4,7 +4,7 @@ import { ChevronRight, Clock4, Download, Gamepad, History, Lightbulb, ListVideo,
 
 const SideBarCategories = () => {
   return (
-    <div>
+    <div className='w-full'>
         <h1 className='flex items-center justify-start pl-7 font-semibold text-xl py-4'>You <ChevronRight /></h1>
         <ul className='flex flex-col justify-center items-center text-md border-b border-gray-200 pb-4'>
             <li className='flex items-center gap-2 cursor-pointer hover:bg-gray-100 py-2 rounded-xl w-full justify-start pl-10 text-lg'><History />History</li>

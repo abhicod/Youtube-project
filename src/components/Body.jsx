@@ -5,7 +5,7 @@ import ButtonsList from './ButtonsList'
 
 const Body = () => {
   return (
-    <div className='flex items-start'>
+    <div className=''>
       <MainContainer />
     </div>
   )
