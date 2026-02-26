@@ -15,7 +15,7 @@ const VideoContainer = () => {
    const data = await fetch(API_BASE_URL);
    const response = await data.json();
    setVideos(response.items);
-   console.log(videos);
+  //  console.log(videos);
   }  
   
 

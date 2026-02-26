@@ -5,7 +5,7 @@ import { MOCK_DATA } from '../utils/mockData'
 
 const CommentsContainer = () => {
   return (
-    <div className="m-5 p-5">
+    <div className="m-5 p-5 w-[1010px]">
       <h1 className="text-2xl font-bold mb-2">Comments</h1>
       <CommentsList comments = { MOCK_DATA} />
     </div>
