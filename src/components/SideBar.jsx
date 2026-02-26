@@ -10,7 +10,7 @@ const SideBar = () => {
  if(!isMenuOpen) return null;
 
   return  (
-    <div className="flex-1 border-r border-gray-200 w-2/12">
+    <div className=" border-r border-gray-200 w-2/12">
       <SideBarListItems />
       <SideBarCategories />
     </div>

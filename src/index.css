@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-.carousel ::-webkit-scrollbar {
+.scrollbar::-webkit-scrollbar {
     display: none;
 }
-.carousel {
+.scrollbar-hide {
     -ms-overflow-style: none;
   scrollbar-width: none;
 }

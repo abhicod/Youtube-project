@@ -24,3 +24,58 @@ const AppLayout = () => {
 };
 
 export default AppLayout;
+
+// import Header from "./Header";
+// import { Outlet, useLocation } from "react-router-dom";
+// import SideBar from "./SideBar";
+// import ButtonsList from "./ButtonsList";
+// import { useDispatch, useSelector } from "react-redux";
+// import { openMenu, closeMenu } from "../utils/appSlice";
+// import { useEffect } from "react";
+
+// const AppLayout = () => {
+
+//   const location = useLocation();
+//   const dispatch = useDispatch();
+
+//   // ✅ READ REDUX STATE
+//   const isMenuOpen = useSelector(
+//     (store) => store.app.isMenuOpen
+//   );
+
+//   /* -------- Route Based Sidebar -------- */
+//   useEffect(() => {
+//     if (location.pathname === "/") {
+//       dispatch(openMenu());
+//     } else {
+//       dispatch(closeMenu());
+//     }
+//   }, [location.pathname, dispatch]);
+
+//   return (
+//     <div className="min-h-screen flex flex-col">
+
+//       <Header />
+
+//       <div className="flex flex-1">
+
+//         {/* Sidebar */}
+//         <SideBar />
+
+//         {/* ✅ MAIN CONTAINER */}
+//         <div
+//           className={`
+//             flex flex-col transition-all duration-300
+//             ${isMenuOpen ? "w-10/12" : "w-full"}
+//           `}
+//         >
+//           <ButtonsList />
+//           <Outlet />
+//         </div>
+
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default AppLayout;
